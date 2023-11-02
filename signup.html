@@ -19,33 +19,33 @@
       </div>
       <div class="login-form">
         <div class="login-heading">
-          <h2>LOGIN</h2>
+          <h2>SIGN UP</h2>
         </div>
         <div class="input-field">
-          <div class="hidden-display" id="usernameDisplay"></div>
-          <input type="text" placeholder="User Name" name="" id="username" />
+          <div class="hidden-display" id="emailPhoneDisplay"></div>
+          <input type="text" placeholder="Email / Phone Number" name="" id="email-or-phone" />
           <div class="hidden-display" id="passwordDisplay"></div>
           <input type="password" name="" placeholder="Password" id="password" />
-          <button type="submit">SUBMIT</button>
+          <button type="submit">Create Account</button>
         </div>
         <p>Forget Password ?</p>
-        <p>New to MingleWaves ? <a href="./signup.html"> Sign Up</a></p>
+        <p>Already have an account ? <a href="./index.html"> Log In</a></p>
         <div class="bottom-clearance"></div>
       </div>
 
     </div>
     <script>
       function somethingClicked(event) {
-        let usernameField = document.getElementById("username");
+        let emailOrPhoneField = document.getElementById("email-or-phone");
         let passwordField = document.getElementById("password");
-        let usernameDisplay = document.getElementById("usernameDisplay");
+        let emailPhoneDisplay = document.getElementById("emailPhoneDisplay");
         let passwordDisplay = document.getElementById("passwordDisplay");
 
-        if (event.target === usernameField) {
-          usernameDisplay.style.display='block'
-          usernameDisplay.textContent = "User Name";
+        if (event.target === emailOrPhoneField) {
+          emailPhoneDisplay.style.display='block'
+          emailPhoneDisplay.textContent = "Email / Phone Number";
         } else {
-          usernameDisplay.style.display='none'
+          emailPhoneDisplay.style.display='none'
         }
         if (event.target === passwordField) {
             passwordDisplay.style.display='block'
