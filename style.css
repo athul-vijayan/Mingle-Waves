@@ -26,9 +26,6 @@ body{
 }
 .top-intro>h1{
     font-size: 3rem;
-    position: sticky;
-    top: 0; /* Stick to the top of the container */
-  z-index: 100;
 }
 .login-form{
     border-top-right-radius: 60px;
