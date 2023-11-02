@@ -96,3 +96,6 @@ button[type='submit']{
 .login-form>p{
     margin-bottom: 10px;
 }
+.bottom-clearance{
+    height: 30px;
+}
