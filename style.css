@@ -86,7 +86,7 @@ button[type='submit']{
     padding: 15px 20px;
     margin-top: 10px;
     margin-bottom: 20px;
-    border-radius: 10px;
+    border-radius: 10px; 
     outline: none;
     border: none;
 }
@@ -100,4 +100,25 @@ button[type='submit']{
 }
 .bottom-clearance{
     height: 100px;
+}
+.other-signin-button{
+    padding: 10px 15px;
+    border: 1px solid #009BBE;
+    width: 48%;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .8rem;
+    font-weight: 700;
+}
+.other-signin-button:hover{
+    background-color: #009BBE;
+    color: white;
+}
+#other-signin-options{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
 }

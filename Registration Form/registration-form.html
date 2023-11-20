@@ -9,6 +9,13 @@
       href="https://fonts.googleapis.com/css?family=Inter"
       rel="stylesheet"
     />
+
+    
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-firestore-compat.js"></script>
+    <script src="../Firebase/firebaseConfig.js"></script>
+    
+
   </head>
   <body>
     <div class="container">
@@ -19,21 +26,23 @@
         <h2>REGISTER</h2>
         <div class="registration-form">
           <div class="name-field">
-            <label for="Name">Name</label>
-            <input type="text" name="Name" id="" />
+            <label for="regName">Name</label>
+            <input type="text" name="regName" id="regName" />
           </div>
           <div class="username-field">
-            <label for="username">User Name</label>
-            <input type="text" name="username" id="" />
+            <label for="regUsername">User Name</label>
+            <input type="text" name="regUsername" id="regUsername" />
           </div>
           <input type="file" name="dp-image" id="" />
           <div class="dob-field">
             <label for="dob">Date of Birth</label>
-            <input type="date" name="dob"  id="" />
+            <input type="date" name="dob"  id="dob" />
           </div>
-          <input type="submit" class="submit-button" value="Complete Registration" />
+          <button type="" onclick="addDataToFirestore()" id="submit" class="submit-button" value="" >Complete Registration</button>
         </div>
       </div>
     </div>
+    <script src="../Firebase/addUserDetailsToFirestore.js"></script>
+
   </body>
 </html>

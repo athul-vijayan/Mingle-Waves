@@ -1,0 +1,6 @@
+# .gitignore
+
+# Firebase config file
+firebaseConfig.js
+
+node_modules

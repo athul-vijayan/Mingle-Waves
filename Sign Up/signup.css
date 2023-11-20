@@ -95,9 +95,30 @@ button[type='submit']{
     text-decoration: none;
     color: #009BBE;
 }
-.login-form>p{
+.login-form>p{  
     margin-bottom: 10px;
 }
 .bottom-clearance{
-    height: 30px;
+    height: 100px;
+}
+.other-signin-button{
+    padding: 10px 15px;
+    border: 1px solid #009BBE;
+    width: 48%;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .8rem;
+    font-weight: 700;
+}
+.other-signin-button:hover{
+    background-color: #009BBE;
+    color: white;
+}
+#other-signin-options{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
 }

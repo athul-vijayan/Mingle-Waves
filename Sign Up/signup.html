@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>  
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MingleWaves</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./signup.css" />
+
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-auth-compat.js"></script>
+    <script src="../Firebase/firebaseConfig.js"></script>
+    
+    <script src="../Firebase/anonymousLogin.js"></script>
+    <script src="../Firebase/signUp.js"></script>
+
+    <script src="./placeholderAnimation.js"></script>
+  </head>
+  <body onclick="somethingClicked(event)">
+    <div class="container">
+      <div class="top-intro">
+        <h3>Welcome To</h3>
+        <h1>MingleWaves</h1>
+        <div id="message"></div>
+      </div>
+      <div class="login-form">
+        <div class="login-heading">
+          <h2>SIGN UP</h2>
+        </div>
+        <div class="input-field">
+          <div class="hidden-display" id="emailDisplay"></div>
+          <input type="text" placeholder="Email" name="" id="emailInputElement" />
+          <div class="hidden-display" id="passwordDisplay"></div>
+          <input type="password" name="" placeholder="Password" id="passwordInputElement" />
+          <button onclick="signUp()" type="submit">Create Account</button>
+        </div>
+        <div id="other-signin-options">
+          <div class="other-signin-button" id="email-popup-signin">G Mail</div>
+          <div class="other-signin-button" onclick="signInAnonymously()" id="guest-mode">Continue as Guest</div>
+        </div>
+        <p>Forget Password ?</p>
+        <p>Already have an account ? <a href="../log-in.html"> Log In</a></p>
+        <div class="bottom-clearance"></div>
+      </div>
+
+    </div>
+     
+  </body>
+</html>
